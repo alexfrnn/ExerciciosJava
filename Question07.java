@@ -1,5 +1,3 @@
-package java_lessons;
-
 import java.util.Scanner;
 
 public class Question07 {
