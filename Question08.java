@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class Question08 {
     public static void main(String[] args) {
         double rendaConjunta = 0;
-        double ALIO = 0;
         double rendaHomem, rendaMulher;
         
         Scanner input = new Scanner(System.in);
@@ -16,6 +15,8 @@ public class Question08 {
 
         rendaConjunta = (rendaHomem + rendaMulher);
 
-        System.out.println("");
+        System.out.println("Renda Conjunta " + rendaConjunta);
+        // System.out.println("Renda Conjunta " + rendaConjunta);
+        //System.out.println("Renda Conjunta " + rendaConjunta);
     }
 }
