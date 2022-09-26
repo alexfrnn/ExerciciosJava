@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 public class Question07 {
@@ -6,6 +7,7 @@ public class Question07 {
 		
 		int notasDeCem,
 		// int notasDeCinquenta, notasDeVinte, notasDeDez, notasDeCinco, notasDeDois, umReal;
+	
 		Scanner input = new Scanner(System.in);
 		System.out.println("Digite a quantidade de cédulas");
 		cedulasInseridas = input.nextInt();
