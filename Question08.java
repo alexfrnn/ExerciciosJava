@@ -1,22 +1,41 @@
 import java.util.Scanner;
 
-public class Question08 {
+public class Question08{
+
     public static void main(String[] args) {
-        double rendaConjunta = 0;
-        double rendaHomem, rendaMulher;
+        double rendaHomem;
+        double rendaMulher;
+        double impostoRenda;
+        double aliquota, rendaConjunta, rendaLiquida;
+
+        Scanner reader = new Scanner(System.in);
+        System.out.print("Digite a renda da mulher: ");
+        rendaMulher = reader.nextDouble();
+
+        System.out.print("Digite a renda do homem: ");
+        rendaHomem = reader.nextDouble();
+
         
-        Scanner input = new Scanner(System.in);
+        rendaConjunta = (rendaMulher + rendaHomem);
+
+        if (rendaConjunta > 2500.00) {
+            aliquota = 25;
+        } else if (rendaConjunta >= 1500.01 && rendaConjunta <= 2500) {
+            aliquota = 15;
+        } else if (rendaConjunta >= 900.01 && rendaConjunta <= 1500) {
+            aliquota = 10;
+        } else {
+            aliquota = 0;
+        }
+
+        rendaLiquida = rendaConjunta - (rendaConjunta*(aliquota/100)); 
+        impostoRenda = rendaConjunta * (aliquota/100);
+
         
-        System.out.println("Digite a renda do homem");
-        rendaHomem = input.nextDouble();
-
-        System.out.println("Digite a renda da mulher");
-        rendaMulher = input.nextDouble();
-
-        rendaConjunta = (rendaHomem + rendaMulher);
-
-        System.out.println("Renda Conjunta " + rendaConjunta);
-        // System.out.println("Renda Conjunta " + rendaConjunta);
-        //System.out.println("Renda Conjunta " + rendaConjunta);
+        System.out.printf("\nRenda conjunta: %.2f%n", rendaConjunta);
+        System.out.println("aliquota: " + aliquota + " %");
+        System.out.printf("Imposto de renda: %.2f%n", impostoRenda);
+        System.out.printf("Renda liquida: %.2f%n",rendaLiquida);
+        reader.close();
     }
 }
