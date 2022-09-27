@@ -20,5 +20,6 @@ public class Question10 {
     System.out.println(meses+" mês(es)");
     System.out.println(dias+" dias(s)");
    
+    reader.close();
     }
 }
