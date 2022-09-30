@@ -11,7 +11,7 @@ public class Question01 {
         System.out.println("Digite a segunda nota: ");
         double secondGrade = input.nextDouble();
         
-        double media = ((firstGrade * 3.5 )+(secondGrade * 7.5))/11;
+        double media = ((firstGrade * 3.5 )+(secondGrade * 7.5)) / 11;
 
         System.out.printf("A média é: %.2f%n", media);
         input.close();
