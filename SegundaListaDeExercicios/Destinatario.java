@@ -1,10 +1,10 @@
 public class  Destinatario {
-    private int emailDestinatario;
+    private static int emailDestinatario;
     
     
-    public Destinatario(int emailDestinatario) {
+    /* public Destinatario(int emailDestinatario) {
         this.emailDestinatario = emailDestinatario;
-    }
+    }*/
 
 
     public static int getEmailDestinatario() {

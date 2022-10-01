@@ -1,6 +1,6 @@
 public class Email {
     private int nomeDoEmail;
-    ArrayList <Destinatario> destinatarios;
+    //ArrayList <Destinatario> destinatarios;
     
     public Email(int nomeDoEmail) {
         this.nomeDoEmail = nomeDoEmail;
@@ -17,6 +17,5 @@ public class Email {
     public void escrever(){
         System.out.println("retorno escrever");
     }
-
-    public 
+ 
 }
